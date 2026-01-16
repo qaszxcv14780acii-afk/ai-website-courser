@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أدوات الذكاء الاصطناعي - عالم الذكاء الاصطناعي</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="bi bi-cpu"></i>
+          عالم الذكاء الاصطناعي
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="tools.html">الأدوات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ai-content.html">الذكاء الاصطناعي</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">تواصل</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-12">
+            <div class="hero-content text-center" data-aos="fade-up">
+              <h1 class="display-3 fw-bold mb-4">
+                أدوات <span class="gradient-text">الذكاء الاصطناعي</span>
+              </h1>
+              <p class="lead mb-4">
+                اكتشف أقوى الأدوات التي تغير طريقة عملنا وتفكيرنا في عصر
+                التكنولوجيا
+              </p>
+              <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#chat-tools" class="btn btn-primary btn-lg">
+                  <i class="bi bi-chat-dots"></i> الذكاء التوليدي
+                </a>
+                <a href="#image-tools" class="btn btn-outline-light btn-lg">
+                  <i class="bi bi-image"></i> إنشاء الصور
+                </a>
+                <a href="#code-tools" class="btn btn-outline-light btn-lg">
+                  <i class="bi bi-code-slash"></i> برمجة ذكية
+                </a>
+                <a href="#video-tools" class="btn btn-outline-light btn-lg">
+                  <i class="bi bi-camera-video"></i> الفيديو
+                </a>
+                <a href="#business-tools" class="btn btn-outline-light btn-lg">
+                  <i class="bi bi-briefcase"></i> الأعمال
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- User-added Tools (from Admin) -->
+    <section id="user-tools" class="py-4">
+      <div class="container">
+        <div class="text-center mb-4" data-aos="fade-up">
+          <h3 class="h4">الأدوات المضافة</h3>
+          <p class="text-muted small">أدوات قمت بإضافتها من لوحة التحكم</p>
+        </div>
+        <div class="row g-4" id="user-tools-container">
+          <!-- populated by tools.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Chat AI Tools Section -->
+    <section id="chat-tools" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">الذكاء التوليدي والمحادثة</h2>
+          <p class="lead text-muted">
+            نماذج لغوية متقدمة قادرة على فهم وإنشاء المحتوى
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-chat-dots"></i>
+              </div>
+              <h4>ChatGPT</h4>
+              <p>
+                نموذج محادثة متطور من OpenAI قادر على الإجابة على الأسئلة وكتابة
+                المحتوى
+              </p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>محادثات طبيعية</li>
+                  <li>ترجمة فورية</li>
+                  <li>تلخيص النصوص</li>
+                  <li>كتابة إبداعية</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-info">GPT-4</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-robot"></i>
+              </div>
+              <h4>Claude</h4>
+              <p>مساعد ذكي من Anthropic متخصص في التحليل والمحادثات الآمنة</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>تحليل متقدم</li>
+                  <li>أمان عالي</li>
+                  <li>فهم السياق</li>
+                  <li>معالجة مستندات</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-warning">Claude 3</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-google"></i>
+              </div>
+              <h4>Gemini</h4>
+              <p>نموذج Google المتقدم للذكاء الاصطناعي متعدد الوسائط</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>معالجة صور</li>
+                  <li>تكامل مع Google</li>
+                  <li>ترجمة فائقة</li>
+                  <li>برمجة ذكية</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-danger">Gemini Pro</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-search"></i>
+              </div>
+              <h4>Perplexity AI</h4>
+              <p>محرك بحث ذكي يجمع المعلومات من مصادر متعددة مع الاستشهادات</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>بحث ذكي متقدم</li>
+                  <li>استشهادات المصادر</li>
+                  <li>إجابات دقيقة</li>
+                  <li>تكامل مع الويب</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-info">بحث ذكي</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-twitter"></i>
+              </div>
+              <h4>Grok</h4>
+              <p>
+                نموذج ذكاء اصطناعي من xAI متصل ببيانات Twitter في الوقت الفعلي
+              </p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>وصول لبيانات Twitter</li>
+                  <li>معلومات حديثة</li>
+                  <li>شخصية فريدة</li>
+                  <li>تحليل اجتماعي</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-primary">xAI</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-code-square"></i>
+              </div>
+              <h4>Llama 2</h4>
+              <p>نموذج Meta مفتوح المصدر للذكاء الاصطناعي التوليدي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>مفتوح المصدر</li>
+                  <li>قابل للتخصيص</li>
+                  <li>أداء قوي</li>
+                  <li>مجتمع نشط</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني</span>
+                <span class="badge bg-primary">Meta</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-lightning-charge"></i>
+              </div>
+              <h4>Mistral AI</h4>
+              <p>نموذج أوروبي متقدم للذكاء الاصطناعي بتركيز على الأداء</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>أداء سريع</li>
+                  <li>كفاءة عالية</li>
+                  <li>دقة ممتازة</li>
+                  <li>API قوي</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-info">أوروبي</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="800"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-heart"></i>
+              </div>
+              <h4>Pi AI</h4>
+              <p>مساعد ذكي شخصي من Inflection AI مصمم للمحادثات الودية</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>محادثات طبيعية</li>
+                  <li>شخصية ودودة</li>
+                  <li>دعم عاطفي</li>
+                  <li>استماع نشط</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني</span>
+                <span class="badge bg-danger">Inflection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Generation Tools Section -->
+    <section id="image-tools" class="py-5 bg-dark">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">إنشاء وتعديل الصور</h2>
+          <p class="lead text-muted">
+            أدوات ذكاء اصطناعي لإنشاء صور فنية وتعديلها
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h4>Midjourney</h4>
+              <p>أداة احترافية لإنشاء صور فنية عالية الجودة من النصوص</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>جودة فائقة</li>
+                  <li>أنماط فنية متعددة</li>
+                  <li>تحكم دقيق</li>
+                  <li>مجتمع إبداعي</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-info">Discord</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-brush"></i>
+              </div>
+              <h4>DALL-E</h4>
+              <p>نظام OpenAI لإنشاء الصور من الأوصاف النصية</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>تكامل مع ChatGPT</li>
+                  <li>صور واقعية</li>
+                  <li>تعديل ذكي</li>
+                  <li>توسيع الصور</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-success">DALL-E 3</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-image"></i>
+              </div>
+              <h4>Stable Diffusion</h4>
+              <p>نموذج مفتوح المصدر لإنشاء الصور بحرية تامة</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>مجاني بالكامل</li>
+                  <li>تخصيص كامل</li>
+                  <li>تدريب خاص</li>
+                  <li>مجتمع ضخم</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني</span>
+                <span class="badge bg-primary">Open Source</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-paint-bucket"></i>
+              </div>
+              <h4>Leonardo AI</h4>
+              <p>منصة شاملة لإنشاء وتعديل الصور بالذكاء الاصطناعي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>واجهة سهلة</li>
+                  <li>أنماط متعددة</li>
+                  <li>تعديل متقدم</li>
+                  <li>مشاريع تعاونية</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-info">منصة</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-film"></i>
+              </div>
+              <h4>Runway ML</h4>
+              <p>
+                أداة متقدمة لإنشاء وتعديل الصور والفيديوهات بالذكاء الاصطناعي
+              </p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>إنشاء فيديو</li>
+                  <li>تعديل ذكي</li>
+                  <li>إزالة الخلفية</li>
+                  <li>تأثيرات متقدمة</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-primary">Gen-2</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-palette2"></i>
+              </div>
+              <h4>Adobe Firefly</h4>
+              <p>نظام Adobe لإنشاء الصور والفنون الرقمية بالذكاء الاصطناعي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>تكامل مع Adobe</li>
+                  <li>جودة احترافية</li>
+                  <li>أدوات متقدمة</li>
+                  <li>سير عمل سلس</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-danger">Adobe</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-brush-fill"></i>
+              </div>
+              <h4>Canva AI</h4>
+              <p>أدوات ذكاء اصطناعي مدمجة في منصة التصميم Canva</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>تصميم سريع</li>
+                  <li>قوالب ذكية</li>
+                  <li>إنشاء نص تلقائي</li>
+                  <li>تحسين الصور</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-info">تصميم</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Tools Section -->
+    <section id="code-tools" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">أدوات البرمجة الذكية</h2>
+          <p class="lead text-muted">
+            مساعدات برمجية ذكية لتسريع وتحسين عملية التطوير
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h4>GitHub Copilot</h4>
+              <p>مساعد برمجة من GitHub يكتب الأكواد معك في الوقت الفعلي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>اقتراحات فورية</li>
+                  <li>دعم جميع اللغات</li>
+                  <li>تعلم من سياقك</li>
+                  <li>تكامل مع IDE</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-info">VS Code</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-lightning"></i>
+              </div>
+              <h4>CodeT5</h4>
+              <p>نموذج ذكاء اصطناعي متخصص في فهم وإنشاء الأكواد البرمجية</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>ترجمة أكواد</li>
+                  <li>تصحيح أخطاء</li>
+                  <li>تحسين الأداء</li>
+                  <li>شرح الأكواد</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني</span>
+                <span class="badge bg-primary">Research</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <h4>AlphaCode</h4>
+              <p>نظام DeepMind لحل مشاكل البرمجة المعقدة</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>حل مسابقات</li>
+                  <li>خوارزميات معقدة</li>
+                  <li>تحليل المشاكل</li>
+                  <li>تحسين الحلول</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-info">بحثي</span>
+                <span class="badge bg-warning">DeepMind</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-cursor"></i>
+              </div>
+              <h4>Cursor</h4>
+              <p>محرر أكواد ذكي يستخدم الذكاء الاصطناعي لكتابة وتعديل الكود</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>تحرير ذكي</li>
+                  <li>إكمال تلقائي</li>
+                  <li>إعادة كتابة الكود</li>
+                  <li>شرح الأكواد</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-primary">محرر</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <h4>Tabnine</h4>
+              <p>مساعد برمجة ذكي يوفر اقتراحات أكواد متقدمة</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>اقتراحات سريعة</li>
+                  <li>دعم متعدد اللغات</li>
+                  <li>تعلم من المشروع</li>
+                  <li>تكامل سهل</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-info">IDE</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-code"></i>
+              </div>
+              <h4>Codeium</h4>
+              <p>مساعد برمجة مجاني قوي يوفر إكمال أكواد ذكي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>مجاني بالكامل</li>
+                  <li>إكمال ذكي</li>
+                  <li>دعم واسع</li>
+                  <li>أداء سريع</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني</span>
+                <span class="badge bg-primary">مفتوح</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-amazon"></i>
+              </div>
+              <h4>Amazon CodeWhisperer</h4>
+              <p>مساعد برمجة من Amazon Web Services</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>تكامل AWS</li>
+                  <li>أمان متقدم</li>
+                  <li>دعم AWS SDK</li>
+                  <li>فحص الأكواد</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-warning">AWS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Tools Section -->
+    <section id="video-tools" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">إنشاء وتعديل الفيديو</h2>
+          <p class="lead text-muted">
+            أدوات ذكاء اصطناعي لإنشاء وتحرير الفيديوهات بسهولة
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-camera-video"></i>
+              </div>
+              <h4>Runway Gen-2</h4>
+              <p>إنشاء فيديوهات احترافية من النصوص بالذكاء الاصطناعي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>إنشاء من نص</li>
+                  <li>تعديل ذكي</li>
+                  <li>إزالة الخلفية</li>
+                  <li>تأثيرات متقدمة</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-primary">Gen-2</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-person-video"></i>
+              </div>
+              <h4>Synthesia</h4>
+              <p>إنشاء فيديوهات تعليمية وتقديمية بأفاتار ذكي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>أفاتار واقعي</li>
+                  <li>دعم 120+ لغة</li>
+                  <li>قوالب جاهزة</li>
+                  <li>تخصيص كامل</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-info">أفاتار</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-film"></i>
+              </div>
+              <h4>Pika Labs</h4>
+              <p>إنشاء فيديوهات قصيرة من النصوص والصور</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>إنشاء سريع</li>
+                  <li>جودة عالية</li>
+                  <li>أنماط متعددة</li>
+                  <li>سهولة الاستخدام</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-primary">فيديو</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Tools Section -->
+    <section id="business-tools" class="py-5 bg-dark">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">أدوات الأعمال والتسويق</h2>
+          <p class="lead text-muted">
+            حلول ذكاء اصطناعي لتعزيز الإنتاجية والتسويق
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-file-text"></i>
+              </div>
+              <h4>Jasper AI</h4>
+              <p>منصة كتابة محتوى تسويقي بالذكاء الاصطناعي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>كتابة محتوى</li>
+                  <li>تحسين SEO</li>
+                  <li>قوالب جاهزة</li>
+                  <li>تحليل الأداء</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-info">تسويق</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-pencil-square"></i>
+              </div>
+              <h4>Copy.ai</h4>
+              <p>أداة كتابة محتوى سريعة وفعالة للمسوقين</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>كتابة سريعة</li>
+                  <li>أنواع محتوى متعددة</li>
+                  <li>تحسين تلقائي</li>
+                  <li>تعاون جماعي</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-primary">كتابة</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-journal-text"></i>
+              </div>
+              <h4>Notion AI</h4>
+              <p>مساعد ذكي مدمج في منصة Notion للإنتاجية</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>كتابة ملاحظات</li>
+                  <li>تلخيص النصوص</li>
+                  <li>ترجمة فورية</li>
+                  <li>تنظيم ذكي</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-info">إنتاجية</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <h4>Grammarly</h4>
+              <p>مساعد كتابة ذكي لتحسين النصوص والقواعد</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>تصحيح أخطاء</li>
+                  <li>تحسين الأسلوب</li>
+                  <li>فحص الانتحال</li>
+                  <li>تكامل متعدد</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-primary">كتابة</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h4>Otter.ai</h4>
+              <p>تحويل الاجتماعات الصوتية إلى نصوص وتلخيصها</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>نسخ تلقائي</li>
+                  <li>تلخيص ذكي</li>
+                  <li>تحديد المتحدثين</li>
+                  <li>تكامل Zoom/Teams</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-info">اجتماعات</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-calendar-check"></i>
+              </div>
+              <h4>Calendly AI</h4>
+              <p>جدولة ذكية للاجتماعات مع مساعد ذكاء اصطناعي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>جدولة تلقائية</li>
+                  <li>اقتراحات ذكية</li>
+                  <li>تكامل التقويم</li>
+                  <li>تذكيرات ذكية</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-primary">جدولة</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audio Tools Section -->
+    <section id="audio-tools" class="py-5 bg-dark">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">معالجة وتوليد الصوت</h2>
+          <p class="lead text-muted">
+            أدوات ذكاء اصطناعي متخصصة في الصوتيات والموسيقى
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-mic-fill"></i>
+              </div>
+              <h4>ElevenLabs</h4>
+              <p>توليد صوت بشري واقعي بأكثر من 29 لغة</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>أصوات واقعية</li>
+                  <li>توليد من نص</li>
+                  <li>استنساخ الصوت</li>
+                  <li>دقة عالية</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-primary">صوت</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-music-note-beamed"></i>
+              </div>
+              <h4>Suno AI</h4>
+              <p>إنشاء موسيقى وأغانٍ كاملة بالذكاء الاصطناعي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>تأليف موسيقى</li>
+                  <li>كتابة أغاني</li>
+                  <li>أنماط متعددة</li>
+                  <li>جودة احترافية</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-info">موسيقى</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-headphones"></i>
+              </div>
+              <h4>Descript</h4>
+              <p>تحرير صوتي وفيديو ذكي مع نسخ تلقائي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>نسخ تلقائي</li>
+                  <li>تحرير بالنص</li>
+                  <li>إزالة الضوضاء</li>
+                  <li>استوديو صوتي</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-warning">تحرير</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-translate"></i>
+              </div>
+              <h4>Whisper</h4>
+              <p>نظام OpenAPI لتحويل الكلام إلى نص بدقة عالية</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>دقة عالية جداً</li>
+                  <li>دعم 99 لغة</li>
+                  <li>ترجمة فورية</li>
+                  <li>مفتوح المصدر</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني</span>
+                <span class="badge bg-primary">OpenAI</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-podcast"></i>
+              </div>
+              <h4>Murf AI</h4>
+              <p>منصة متكاملة لإنشاء محتوى صوتي احترافي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>120+ صوت مختلف</li>
+                  <li>تحرير الصوت</li>
+                  <li>مكتبة موسيقى</li>
+                  <li>بودكاست ذكي</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-info">بودكاست</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-voice-recognition"></i>
+              </div>
+              <h4>Play.ht</h4>
+              <p>توليد خطابات ونصوص صوتية واقعية</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>أصوات مشهورة</li>
+                  <li>استنساخ الصوت</li>
+                  <li>توليد خطابات</li>
+                  <li>API قوي</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-primary">خطابات</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Analysis Tools Section -->
+    <section id="data-tools" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">تحليل البيانات والإحصاء</h2>
+          <p class="lead text-muted">
+            أدوات ذكاء اصطناعي لتحليل البيانات واستخراج الرؤى
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <h4>Tableau AI</h4>
+              <p>تحليل بيانات متقدم مع تصورات ذكية</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>تصورات ذكية</li>
+                  <li>تحليل تلقائي</li>
+                  <li>تنبؤات</li>
+                  <li>لوحات تحكم</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-info">تحليل</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+              <h4>Power BI AI</h4>
+              <p>تحليل بيانات ذكي من Microsoft</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>تحليل طبيعي</li>
+                  <li>اكتشاف الأنماط</li>
+                  <li>تنبؤات ذكية</li>
+                  <li>تكامل Office</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-primary">Microsoft</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-database"></i>
+              </div>
+              <h4>DataRobot</h4>
+              <p>منصة متكاملة لعلوم البيانات والتعلم الآلي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>أتمتة ML</li>
+                  <li>نماذج جاهزة</li>
+                  <li>مراقبة الأداء</li>
+                  <li>نشر سهل</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-info">ML Platform</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Tools Section -->
+    <section id="other-tools" class="py-5 bg-dark">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">أدوات متخصصة أخرى</h2>
+          <p class="lead text-muted">
+            أدوات ذكاء اصطناعي لمجالات وتطبيقات خاصة
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-translate"></i>
+              </div>
+              <h4>DeepL</h4>
+              <p>ترجمة ذكية بدقة عالية للغات متعددة</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>دقة فائقة</li>
+                  <li>30+ لغة</li>
+                  <li>ترجمة مستندات</li>
+                  <li>واجهة API</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-info">ترجمة</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-file-earmark-pdf"></i>
+              </div>
+              <h4>ChatPDF</h4>
+              <p>محادثة مع مستندات PDF وتحليلها بالذكاء الاصطناعي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>أسئلة وأجوبة</li>
+                  <li>تلخيص PDF</li>
+                  <li>تحليل المستندات</li>
+                  <li>دعم متعدد اللغات</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-primary">PDF</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-mind"></i>
+              </div>
+              <h4>MindMeister AI</h4>
+              <p>إنشاء خرائط ذهنية ذكية وتنظيم الأفكار</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>إنشاء تلقائي</li>
+                  <li>تنظيم أفكار</li>
+                  <li>تعاون جماعي</li>
+                  <li>تصدير متعدد</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-info">خرائط ذهنية</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h4>ColorMind</h4>
+              <p>توليد أنظمة ألوان ذكية للتصميم</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>ألوان متناسقة</li>
+                  <li>اقتراحات ذكية</li>
+                  <li>تصدير palettes</li>
+                  <li>تكامل التصميم</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني</span>
+                <span class="badge bg-primary">تصميم</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <h4>IdeasAI</h4>
+              <p>مولد أفكار إبداعية للمشاريع والأعمال</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>أفكار مبتكرة</li>
+                  <li>تحليل السوق</li>
+                  <li>تخطيط مشاريع</li>
+                  <li>دراسة جدوى</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني</span>
+                <span class="badge bg-info">إبداع</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-robot"></i>
+              </div>
+              <h4>Replika</h4>
+              <p>رفيق ذكي افتراضي للمحادثة والدعم النفسي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>محادثات واقعية</li>
+                  <li>تعلم الشخصية</li>
+                  <li>دعم عاطفي</li>
+                  <li>تطور مستمر</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-danger">رفيق افتراضي</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>عالم الذكاء الاصطناعي</h5>
+            <p>استكشف مستقبل التكنولوجيا معنا</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="social-links">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-3" />
+        <div class="text-center">
+          <p>&copy; 2025 عالم الذكاء الاصطناعي. جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+                  <li>OpenCV - معالجة صور</li>
+                  <li>YOLO - كشف الأشياء</li>
+                  <li>FaceNet - التعرف على الوجوه</li>
+                  <li>CLIP - فهم الصور</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني</span>
+                <span class="badge bg-info">رؤية</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-music-note-beamed"></i>
+              </div>
+              <h4>توليد الموسيقى</h4>
+              <p>أدوات لإنشاء وتوليد الموسيقى بالذكاء الاصطناعي</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>AIVA - موسيقى فنية</li>
+                  <li>Suno - أغاني كاملة</li>
+                  <li>Mubert - موسيقى تدفق</li>
+                  <li>Amper - موسيقى مخصصة</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-warning">موسيقى</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-book"></i>
+              </div>
+              <h4>التعليم والتدريب</h4>
+              <p>أدوات ذكاء اصطناعي للتعليم والتعلم</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>Khan Academy AI - تعليم مخصص</li>
+                  <li>Duolingo AI - تعلم لغات</li>
+                  <li>Quizlet AI - بطاقات ذكية</li>
+                  <li>Coursera AI - توصيات</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-success">مجاني/مدفوع</span>
+                <span class="badge bg-primary">تعليم</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4>الأمان والخصوصية</h4>
+              <p>أدوات ذكاء اصطناعي للأمان السيبراني</p>
+              <div class="tool-features">
+                <h6>المميزات:</h6>
+                <ul>
+                  <li>Darktrace - كشف تهديدات</li>
+                  <li>CrowdStrike - حماية نقطة النهاية</li>
+                  <li>Vectra - تحليل الشبكة</li>
+                  <li>Splunk - تحليل أمني</li>
+                </ul>
+              </div>
+              <div class="tool-stats">
+                <span class="badge bg-warning">مدفوع</span>
+                <span class="badge bg-danger">أمان</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">مقارنة الأدوات</h2>
+          <p class="lead text-muted">اختر الأداة المناسبة لاحتياجاتك</p>
+        </div>
+
+        <div class="table-responsive" data-aos="fade-up">
+          <table class="table table-dark table-hover">
+            <thead>
+              <tr>
+                <th>الأداة</th>
+                <th>النوع</th>
+                <th>السعر</th>
+                <th>المميزات الرئيسية</th>
+                <th>المناسبة لـ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>ChatGPT</strong></td>
+                <td><span class="badge bg-primary">محادثة</span></td>
+                <td><span class="badge bg-success">مجاني/مدفوع</span></td>
+                <td>محادثات طبيعية، كتابة إبداعية</td>
+                <td>الاستخدام العام، الكتابة</td>
+              </tr>
+              <tr>
+                <td><strong>Midjourney</strong></td>
+                <td><span class="badge bg-info">صور</span></td>
+                <td><span class="badge bg-warning">مدفوع</span></td>
+                <td>صور فنية عالية الجودة</td>
+                <td>الفنانين، المصممين</td>
+              </tr>
+              <tr>
+                <td><strong>GitHub Copilot</strong></td>
+                <td><span class="badge bg-success">برمجة</span></td>
+                <td><span class="badge bg-warning">مدفوع</span></td>
+                <td>اقتراحات أكواد فورية</td>
+                <td>المطورين، المبرمجين</td>
+              </tr>
+              <tr>
+                <td><strong>Stable Diffusion</strong></td>
+                <td><span class="badge bg-info">صور</span></td>
+                <td><span class="badge bg-success">مجاني</span></td>
+                <td>مفتوح المصدر، تخصيص كامل</td>
+                <td>المطورين، الباحثين</td>
+              </tr>
+              <tr>
+                <td><strong>Perplexity AI</strong></td>
+                <td><span class="badge bg-primary">بحث</span></td>
+                <td><span class="badge bg-success">مجاني/مدفوع</span></td>
+                <td>بحث ذكي مع استشهادات</td>
+                <td>الباحثين، الطلاب</td>
+              </tr>
+              <tr>
+                <td><strong>Runway Gen-2</strong></td>
+                <td><span class="badge bg-info">فيديو</span></td>
+                <td><span class="badge bg-warning">مدفوع</span></td>
+                <td>إنشاء فيديو من نص</td>
+                <td>المبدعين، المحررين</td>
+              </tr>
+              <tr>
+                <td><strong>Cursor</strong></td>
+                <td><span class="badge bg-success">برمجة</span></td>
+                <td><span class="badge bg-warning">مدفوع</span></td>
+                <td>محرر أكواد ذكي</td>
+                <td>المطورين المحترفين</td>
+              </tr>
+              <tr>
+                <td><strong>Jasper AI</strong></td>
+                <td><span class="badge bg-warning">تسويق</span></td>
+                <td><span class="badge bg-warning">مدفوع</span></td>
+                <td>كتابة محتوى تسويقي</td>
+                <td>المسوقين، الكُتاب</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>عالم الذكاء الاصطناعي</h5>
+            <p>اكتشف أفضل أدوات الذكاء الاصطناعي</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="social-links">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-3" />
+        <div class="text-center">
+          <p>&copy; 2025 عالم الذكاء الاصطناعي. جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="tools.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.renderToolsFull) renderToolsFull("user-tools-container");
+      });
+      
+    </script>
+  </body>
+
+</html>

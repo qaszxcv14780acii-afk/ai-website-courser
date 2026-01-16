@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - عالم الذكاء الاصطناعي</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-cpu"></i>
+                عالم الذكاء الاصطناعي
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tools.html">الأدوات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ai-content.html">الذكاء الاصطناعي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">تواصل</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section contact-hero">
+        <div class="hero-background"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-12">
+                    <div class="hero-content text-center" data-aos="fade-up">
+                        <div class="hero-badge mb-4" data-aos="fade-down" data-aos-delay="200">
+                            <span class="badge-text">
+                                <i class="bi bi-chat-heart"></i> نحن هنا لمساعدتك
+                            </span>
+                        </div>
+                        <h1 class="display-2 fw-bold mb-4 hero-title">
+                            تواصل <span class="gradient-text">معنا</span>
+                        </h1>
+                        <p class="lead mb-5 hero-description">
+                            انضم إلى مجتمع الذكاء الاصطناعي وشاركنا رحلة استكشاف المستقبل. نحن هنا للاستماع ومساعدتك في كل خطوة
+                        </p>
+                        <div class="d-flex gap-3 justify-content-center flex-wrap hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                            <a href="#contact-form" class="btn btn-primary btn-lg btn-hero">
+                                <i class="bi bi-envelope"></i> أرسل رسالة
+                            </a>
+                            <a href="#info" class="btn btn-outline-light btn-lg btn-hero">
+                                <i class="bi bi-info-circle"></i> معلومات الاتصال
+                            </a>
+                        </div>
+                        <div class="scroll-indicator mt-5">
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="py-5 contact-form-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-badge">تواصل</span>
+                <h2 class="display-4 fw-bold mb-3">أرسل لنا رسالة</h2>
+                <p class="lead text-muted">نحن هنا للاستماع ومساعدتك في رحلتك مع الذكاء الاصطناعي</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="contact-form-enhanced" data-aos="fade-up" data-aos-delay="200">
+                        <div class="form-header">
+                            <div class="form-icon">
+                                <i class="bi bi-envelope-paper"></i>
+                            </div>
+                            <h3>نموذج الاتصال</h3>
+                            <p>املأ النموذج أدناه وسنرد عليك في أقرب وقت ممكن</p>
+                        </div>
+                        <form id="contactForm" class="enhanced-form">
+                            <div class="form-progress">
+                                <div class="progress-bar" id="formProgress"></div>
+                            </div>
+                            
+                            <div class="row g-4">
+                                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="form-group-enhanced">
+                                        <label for="name" class="form-label-enhanced">
+                                            <i class="bi bi-person"></i> الاسم الكامل *
+                                        </label>
+                                        <div class="input-wrapper">
+                                            <input type="text" class="form-control-enhanced" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
+                                            <span class="input-icon"><i class="bi bi-check-circle-fill"></i></span>
+                                        </div>
+                                        <div class="form-feedback"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="form-group-enhanced">
+                                        <label for="email" class="form-label-enhanced">
+                                            <i class="bi bi-envelope"></i> البريد الإلكتروني *
+                                        </label>
+                                        <div class="input-wrapper">
+                                            <input type="email" class="form-control-enhanced" id="email" name="email" placeholder="example@email.com" required>
+                                            <span class="input-icon"><i class="bi bi-check-circle-fill"></i></span>
+                                        </div>
+                                        <div class="form-feedback"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="form-group-enhanced">
+                                        <label for="phone" class="form-label-enhanced">
+                                            <i class="bi bi-telephone"></i> رقم الهاتف
+                                        </label>
+                                        <div class="input-wrapper">
+                                            <input type="tel" class="form-control-enhanced" id="phone" name="phone" placeholder="+966 5X XXX XXXX">
+                                            <span class="input-icon"><i class="bi bi-check-circle-fill"></i></span>
+                                        </div>
+                                        <div class="form-feedback"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="form-group-enhanced">
+                                        <label for="subject" class="form-label-enhanced">
+                                            <i class="bi bi-tag"></i> الموضوع *
+                                        </label>
+                                        <div class="input-wrapper">
+                                            <select class="form-control-enhanced" id="subject" name="subject" required>
+                                                <option value="">اختر الموضوع</option>
+                                                <option value="general">استفسار عام</option>
+                                                <option value="tools">الاستفسار عن الأدوات</option>
+                                                <option value="collaboration">اقتراح تعاون</option>
+                                                <option value="feedback">ملاحظات واقتراحات</option>
+                                                <option value="technical">دعم فني</option>
+                                                <option value="other">أخرى</option>
+                                            </select>
+                                            <span class="input-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </div>
+                                        <div class="form-feedback"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="form-group-enhanced">
+                                        <label for="message" class="form-label-enhanced">
+                                            <i class="bi bi-chat-text"></i> رسالتك *
+                                        </label>
+                                        <div class="input-wrapper">
+                                            <textarea class="form-control-enhanced" id="message" name="message" rows="6" placeholder="اكتب رسالتك هنا..." required></textarea>
+                                            <span class="char-counter"><span id="charCount">0</span> / 500</span>
+                                        </div>
+                                        <div class="form-feedback"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="form-check-enhanced">
+                                        <input class="form-check-input-enhanced" type="checkbox" id="newsletter" name="newsletter">
+                                        <label class="form-check-label-enhanced" for="newsletter">
+                                            <i class="bi bi-bell"></i>
+                                            أود تلقي نشرتنا الإخبارية حول آخر تطورات الذكاء الاصطناعي
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 text-center mt-4" data-aos="fade-up" data-aos-delay="700">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-submit">
+                                        <span class="btn-text">
+                                            <i class="bi bi-send"></i> إرسال الرسالة
+                                        </span>
+                                        <span class="btn-loader">
+                                            <i class="bi bi-arrow-repeat"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="info" class="py-5 bg-dark contact-info-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-badge">معلومات</span>
+                <h2 class="display-4 fw-bold mb-3">معلومات الاتصال</h2>
+                <p class="lead text-muted">طرق متعددة للتواصل مع فريقنا</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="contact-info-card-enhanced text-center">
+                        <div class="card-glow"></div>
+                        <div class="contact-icon-enhanced">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <h4>البريد الإلكتروني</h4>
+                        <div class="contact-details">
+                            <p><i class="bi bi-envelope-at"></i> info@aiworld.com</p>
+                            <p><i class="bi bi-headset"></i> support@aiworld.com</p>
+                        </div>
+                        <a href="mailto:info@aiworld.com" class="btn btn-outline-light btn-sm btn-contact">
+                            <i class="bi bi-send"></i> أرسل بريد
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="contact-info-card-enhanced text-center">
+                        <div class="card-glow"></div>
+                        <div class="contact-icon-enhanced">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <h4>الهاتف</h4>
+                        <div class="contact-details">
+                            <p><i class="bi bi-telephone-fill"></i> +966 50 123 4567</p>
+                            <p><i class="bi bi-phone"></i> +966 55 987 6543</p>
+                        </div>
+                        <a href="tel:+966501234567" class="btn btn-outline-light btn-sm btn-contact">
+                            <i class="bi bi-telephone"></i> اتصل الآن
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="contact-info-card-enhanced text-center">
+                        <div class="card-glow"></div>
+                        <div class="contact-icon-enhanced">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h4>العنوان</h4>
+                        <div class="contact-details">
+                            <p><i class="bi bi-geo-alt-fill"></i>اليمن</p>
+                            <p><i class="bi bi-building"></i> صنعاء</p>
+                        </div>
+                        <a href="#" class="btn btn-outline-light btn-sm btn-contact">
+                            <i class="bi bi-map"></i> عرض الخريطة
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">تابعنا على وسائل التواصل</h2>
+                <p class="lead text-muted">انضم إلى مجتمعنا وكن على اطلاع بآخر الأخبار</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="social-media-container" data-aos="fade-up">
+                        <div class="row g-3">
+                            <div class="col-md-3">
+                                <a href="#" class="social-card">
+                                    <div class="social-icon">
+                                        <i class="bi bi-facebook"></i>
+                                    </div>
+                                    <h5>فيسبوك</h5>
+                                    <p>50K متابع</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="social-card">
+                                    <div class="social-icon">
+                                        <i class="bi bi-twitter"></i>
+                                    </div>
+                                    <h5>تويتر</h5>
+                                    <p>25K متابع</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="social-card">
+                                    <div class="social-icon">
+                                        <i class="bi bi-linkedin"></i>
+                                    </div>
+                                    <h5>لينكدإن</h5>
+                                    <p>15K متابع</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="social-card">
+                                    <div class="social-icon">
+                                        <i class="bi bi-youtube"></i>
+                                    </div>
+                                    <h5>يوتيوب</h5>
+                                    <p>100K مشترك</p>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-3">
+                                <a href="#" class="social-card">
+                                    <div class="social-icon">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                    <h5>انستغرام</h5>
+                                    <p>30K متابع</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="social-card">
+                                    <div class="social-icon">
+                                        <i class="bi bi-telegram"></i>
+                                    </div>
+                                    <h5>تيليجرام</h5>
+                                    <p>20K عضو</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="social-card">
+                                    <div class="social-icon">
+                                        <i class="bi bi-github"></i>
+                                    </div>
+                                    <h5>جيت هب</h5>
+                                    <p>5K نجمة</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="social-card">
+                                    <div class="social-icon">
+                                        <i class="bi bi-discord"></i>
+                                    </div>
+                                    <h5>ديسكورد</h5>
+                                    <p>10K عضو</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-dark">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">الأسئلة الشائعة</h2>
+                <p class="lead text-muted">إجابات على الأسئلة الأكثر شيوعاً</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion" data-aos="fade-up">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    ما هو الذكاء الاصطناعي وكيف يعمل؟
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    الذكاء الاصطناعي هو فرع من علوم الكمبيوتر يهدف إلى إنشاء آلات قادرة على محاكاة السلوك الذكي البشري. يعمل من خلال خوارزميات تعلم الآلة والشبكات العصبية التي تسمح للأنظمة بالتعلم من البيانات واتخاذ القرارات.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    كيف يمكنني البدء في تعلم الذكاء الاصطناعي؟
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    يمكنك البدء بتعلم أساسيات البرمجة (Python)، ثم دراسة الرياضيات (الجبر الخطي والإحصاء)، بعد ذلك تعلم مكتبات التعلم الآلي مثل TensorFlow وPyTorch، وأخيراً العمل على مشاريع عملية لتطبيق ما تعلمته.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    هل أدوات الذكاء الاصطناعي مجانية؟
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    معظم الأدوات تقدم خطط مجانية محدودة وخطط مدفوعة بميزات متقدمة. بعض الأدوات مفتوحة المصدر ومجانية بالكامل مثل Stable Diffusion، بينما others تتطلب اشتراكاً شهرياً مثل ChatGPT Plus وMidjourney.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    هل يمكنني استخدام الذكاء الاصطناعي في عملي؟
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    نعم، يمكن استخدام الذكاء الاصطناعي في العديد المجالات مثل تسريع كتابة المحتوى، تحليل البيانات، أتمتة المهام المتكررة، تحسين خدمة العملاء، والمساعدة في اتخاذ القرارات. يعتمد الأمر على طبيعة عملك واحتياجاتك.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    كيف يمكنني التعاون معكم؟
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    نرحب بالتعاون في مجالات البحث والتطوير، المحتوى التعليمي، الاستشارات، والمشاريع المشتركة. يمكنك التواصل معنا عبر نموذج الاتصال أو إرسال بريد إلكتروني إلى collaboration@aiworld.com مع تفاصيل اقتراحك.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">ساعات العمل</h2>
+                <p class="lead text-muted">متى يمكننا مساعدتك</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="office-hours" data-aos="fade-up">
+                        <div class="hours-grid">
+                            <div class="hours-item">
+                                <div class="days">الأحد - الخميس</div>
+                                <div class="time">9:00 ص - 6:00 م</div>
+                            </div>
+                            <div class="hours-item">
+                                <div class="days">الجمعة</div>
+                                <div class="time">10:00 ص - 2:00 م</div>
+                            </div>
+                            <div class="hours-item">
+                                <div class="days">السبت</div>
+                                <div class="time">مغلق</div>
+                            </div>
+                        </div>
+                        
+                        <div class="emergency-contact">
+                            <h5>للحالات الطارئة</h5>
+                            <p>يمكنك التواصل معنا على مدار الساعة عبر:</p>
+                            <a href="tel:+966501234567" class="btn btn-danger">
+                                <i class="bi bi-telephone"></i> +966 50 123 4567
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>عالم الذكاء الاصطناعي</h5>
+                    <p>نتطلع للاستماع منك</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p>&copy; 2025 عالم الذكاء الاصطناعي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Contact Form Enhanced Script -->
+    <script>
+        // Form Progress Tracking
+        function updateFormProgress() {
+            const form = document.getElementById('contactForm');
+            const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+            const filled = Array.from(inputs).filter(input => {
+                if (input.type === 'checkbox') return input.checked;
+                return input.value.trim() !== '';
+            }).length;
+            const progress = (filled / inputs.length) * 100;
+            document.getElementById('formProgress').style.width = progress + '%';
+        }
+
+        // Character Counter
+        const messageTextarea = document.getElementById('message');
+        const charCount = document.getElementById('charCount');
+        if (messageTextarea && charCount) {
+            messageTextarea.addEventListener('input', function() {
+                const count = this.value.length;
+                charCount.textContent = count;
+                if (count > 500) {
+                    this.value = this.value.substring(0, 500);
+                    charCount.textContent = 500;
+                }
+                charCount.parentElement.style.color = count > 450 ? '#ef4444' : 'var(--text-muted)';
+            });
+        }
+
+        // Real-time Validation
+        const formInputs = document.querySelectorAll('.form-control-enhanced');
+        formInputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                validateField(this);
+                updateFormProgress();
+            });
+            
+            input.addEventListener('input', function() {
+                if (this.classList.contains('is-invalid')) {
+                    validateField(this);
+                }
+                updateFormProgress();
+            });
+        });
+
+        function validateField(field) {
+            const wrapper = field.closest('.form-group-enhanced');
+            const feedback = wrapper.querySelector('.form-feedback');
+            const icon = wrapper.querySelector('.input-icon');
+            let isValid = true;
+            let message = '';
+
+            // Remove previous validation classes
+            field.classList.remove('is-valid', 'is-invalid');
+            if (icon) icon.style.display = 'none';
+
+            if (field.hasAttribute('required') && !field.value.trim()) {
+                isValid = false;
+                message = 'هذا الحقل مطلوب';
+            } else if (field.type === 'email' && field.value) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(field.value)) {
+                    isValid = false;
+                    message = 'يرجى إدخال بريد إلكتروني صحيح';
+                }
+            } else if (field.type === 'tel' && field.value) {
+                const phoneRegex = /^[\d\s\+\-\(\)]+$/;
+                if (!phoneRegex.test(field.value)) {
+                    isValid = false;
+                    message = 'يرجى إدخال رقم هاتف صحيح';
+                }
+            }
+
+            if (field.value.trim() && isValid) {
+                field.classList.add('is-valid');
+                if (icon) {
+                    icon.style.display = 'flex';
+                    icon.innerHTML = '<i class="bi bi-check-circle-fill"></i>';
+                }
+                feedback.textContent = '';
+                feedback.className = 'form-feedback';
+            } else if (!isValid) {
+                field.classList.add('is-invalid');
+                if (icon) {
+                    icon.style.display = 'flex';
+                    icon.innerHTML = '<i class="bi bi-x-circle-fill"></i>';
+                }
+                feedback.textContent = message;
+                feedback.className = 'form-feedback text-danger';
+            }
+
+            return isValid;
+        }
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validate all fields
+            let isFormValid = true;
+            const requiredFields = this.querySelectorAll('[required]');
+            requiredFields.forEach(field => {
+                if (!validateField(field)) {
+                    isFormValid = false;
+                }
+            });
+
+            if (!isFormValid) {
+                showNotification('يرجى تصحيح الأخطاء في النموذج', 'error');
+                return;
+            }
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(data.email)) {
+                showNotification('يرجى إدخال بريد إلكتروني صحيح', 'error');
+                return;
+            }
+            
+            // Show loading state
+            const submitBtn = this.querySelector('.btn-submit');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoader = submitBtn.querySelector('.btn-loader');
+            
+            submitBtn.classList.add('loading');
+            btnText.style.display = 'none';
+            btnLoader.style.display = 'inline-block';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                showNotification('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً', 'success');
+                this.reset();
+                document.getElementById('formProgress').style.width = '0%';
+                document.getElementById('charCount').textContent = '0';
+                
+                submitBtn.classList.remove('loading');
+                btnText.style.display = 'inline-block';
+                btnLoader.style.display = 'none';
+                submitBtn.disabled = false;
+                
+                // Reset validation states
+                formInputs.forEach(input => {
+                    input.classList.remove('is-valid', 'is-invalid');
+                    const wrapper = input.closest('.form-group-enhanced');
+                    const icon = wrapper.querySelector('.input-icon');
+                    if (icon) icon.style.display = 'none';
+                    wrapper.querySelector('.form-feedback').textContent = '';
+                });
+                
+                // Scroll to top with animation
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 2000);
+        });
+
+        // Initialize form progress
+        updateFormProgress();
+    </script>
+</body>
+</html>
